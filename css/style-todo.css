@@ -1,0 +1,13 @@
+/* For LIST-TODO */
+
+.todo-item {
+    display: flex;
+    margin: 7px;
+}
+.item-id {
+    font-weight: bold;
+    padding: 7px;
+}
+/*.item-check {
+    margin: 12px 10px;
+}*/
