@@ -35,5 +35,7 @@ var app = new Vue({
         ]*/
     }
 });
-
+$.getJSON('https://github.com/makklays/vuejs-todo/todos.json', function (json) {
+    app.json = json;
+});
 
