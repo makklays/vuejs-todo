@@ -1,4 +1,4 @@
-const todos = [
+/*const todos = [
     {id: 1, title: "todo1", done: false},
     {id: 2, title: "todo2", done: true},
     {id: 3, title: "todo3", done: false},
@@ -6,7 +6,7 @@ const todos = [
     {id: 5, title: "todo5", done: false},
     {id: 6, title: "todo6", done: true},
     {id: 7, title: "todo7", done: true},
-];
+];*/
 
 Vue.component('todo-list', {
     props: ['id', 'title', 'done', 'item'],
@@ -24,7 +24,7 @@ Vue.component('todo-list', {
 var app = new Vue({
     el: '#app',
     data: {
-        todos: todos /*[
+        json: null /*todos [
             {id: 1, title: "todo1", done: false},
             {id: 2, title: "todo2", done: true},
             {id: 3, title: "todo3", done: false},
