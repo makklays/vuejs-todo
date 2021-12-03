@@ -19,7 +19,7 @@
         <h1>Todo list:</h1>
 
         <todo-list
-            v-for="tarea of todos"
+            v-for="tarea of json"
             v-bind:item="tarea"
             v-bind:id="tarea.id"
             v-bind:title="tarea.title"
