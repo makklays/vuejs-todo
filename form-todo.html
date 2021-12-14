@@ -17,13 +17,24 @@
 <body>
   
     <form action="" method="POST">
+        <div class="form-group">
+            <label for="id-title">Title</label>
+            <!-- input id="id-title2" type="text" name="title" value="" placeholder="some text" / -->
+            <input id="id-title" name="title" v-model="fields.title" class="form-control" placeholder="some text" />
+        </div>
+        
+        <div class="form-group">
+            <label for="email">E-mail</label>
+            <input type="email" class="form-control" name="email" id="email" v-model="fields.email" />
+            <div v-if="errors && errors.email" class="text-danger">{{ errors.email[0] }}</div>
+        </div>
+        
+        <button type="submit" class="btn btn-primary">Send</button>
 
-        <label for="id-title">Title</label>
-        <!-- input id="id-title2" type="text" name="title" value="" placeholder="some text" / -->
-        <input id="id-title" v-model="message" placeholder="some text" />
-
-        <input type="submit" value="Send" />
-
+        <div v-if="success" class="alert alert-success mt3">
+            Message sent! 
+        </div>
+        
     </form>
 
     <!-- vuejs y js -->
