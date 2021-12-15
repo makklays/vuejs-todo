@@ -12,4 +12,4 @@ Route::get('/', function() {
   ]);
 });
 
-Route::post('/form-todo-submit', 'FormTodoController@submit');
+Route::post('/form-todo-submit', 'App\Http\Controllers\FormTodoController@submit');
