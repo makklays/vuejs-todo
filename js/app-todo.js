@@ -41,3 +41,31 @@ $.getJSON('https://makklays.github.io/vuejs-todo/todos.json', function (json) {
     console.log(app.json);
 });
 
+/*
+var app = new Vue({
+    el: '#app',
+    data: {
+        message: 'Hello Vue!',
+        json: null
+    },
+    mounted () {
+        axios
+          .request({
+            //url: '/items/ITEM_NAME',
+            method: 'get',
+            baseURL: 'https://makklays.github.io/vuejs-todo/todos.json',
+            headers: {
+                'Content-Type': 'application/json',
+                'Authorization': 'Bearer TOKEN'
+            }
+          })
+          .then(response => {
+            console.log(response.data);
+            this.json = response.data;
+          })
+          .catch((error) => {
+               console.log(error)
+           })
+      }
+})
+*/
