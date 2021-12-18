@@ -24,7 +24,7 @@ Vue.component('todo-list', {
 var app = new Vue({
     el: '#app',
     data: {
-        json: null /*todos [
+        json: null, /*todos [
             {id: 1, title: "todo1", done: false},
             {id: 2, title: "todo2", done: true},
             {id: 3, title: "todo3", done: false},
@@ -33,7 +33,28 @@ var app = new Vue({
             {id: 6, title: "todo6", done: true},
             {id: 7, title: "todo7", done: true},
         ]*/
-    }
+        numberDays: 7.0001,
+    },
+    filters: {
+        upperword: function (value) {
+            if (!value) return ''
+            value = value.toString()
+            return 'AAA' + value.charAt(0).toUpperCase() + value.slice(1)
+        }
+    },
+    computed: {
+        value_fix() {
+            return this.numberDays.toFixed(2);
+        },
+    },
+    methods: {
+        getScore(val) {
+            return val.toFixed(2);
+        }
+    //     send() {
+    //         console.log('senddddddd!');
+    //     },
+    },
 });
 $.getJSON('https://makklays.github.io/vuejs-todo/todos.json', function (json) {
     console.log(json);
