@@ -66,6 +66,7 @@ $.getJSON('https://makklays.github.io/vuejs-todo/todos.json', function (json) {
 var app = new Vue({
     el: '#app',
     data: {
+        loading: true,
         message: 'Hello Vue!',
         json: null
     },
@@ -87,6 +88,7 @@ var app = new Vue({
           .catch((error) => {
                console.log(error)
            })
+          .finally(() => (this.loading = false));
       }
 })
 */
