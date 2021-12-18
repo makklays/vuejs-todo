@@ -51,9 +51,9 @@ var app = new Vue({
         getScore(val) {
             return val.toFixed(2);
         }
-    //     send() {
-    //         console.log('senddddddd!');
-    //     },
+    //  send() {
+    //      console.log('senddddddd!');
+    //  },
     },
 });
 $.getJSON('https://makklays.github.io/vuejs-todo/todos.json', function (json) {
