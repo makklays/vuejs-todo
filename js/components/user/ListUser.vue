@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="out-margin" v-if="is_show">
-      <list-item v-for="item in list" key="item.id"></user-item>
+      <list-item v-for="item in list" v-bind:key="item.id"></user-item>
     </div>  
   </div>
 </template>
