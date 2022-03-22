@@ -70,6 +70,12 @@ export default {
           this.userIDs.push(this.users[user].id);
         }
       }
+      
+      // or this 
+      this.selected = [];
+      for (user in this.users) {
+          this.selected.push(this.users[user].id);
+      }
     }
   },
   components: {
