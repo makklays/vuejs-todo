@@ -1,21 +1,21 @@
-# vuejs-todo
+# Vuejs-todo
 Los ejemplos de codigo con Vue.js 
 
-# Useful commands 
+# Useful commands | Comandos últimos para programar
 
-## install vue.js to Laravel 
+## installar vue.js en Laravel 
  0. sudo npm install -g npm@latest
  1. sudo composer require laravel/ui
  2. php artisan ui vue
  3. sudo npm run dev | sudo npm run watch 
 
-## create database
+## crear base de datos
 CREATE DATABASE mydatabase CHARACTER SET utf8 COLLATE utf8_general_ci;
 
-## install Laravel 
+## installar Laravel 
 `$ composer create-project laravel/laravel your-site-name --prefer-dist`
 
-## git pull with some code
+## git pull con algun código
 `$ sudo git pull origin master --allow-unrelated-histories`
 
 ## git config sslverify
