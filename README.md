@@ -4,9 +4,10 @@ Los ejemplos de codigo con Vue.js
 # Useful commands 
 
 ## install vue.js to Laravel 
- 0. sudo npm install ....
+ 0. sudo npm install -g npm@latest
  1. sudo composer require laravel/ui
  2. php artisan ui vue
+ 3. sudo npm run dev | sudo npm run watch 
 
 ## create database
 CREATE DATABASE mydatabase CHARACTER SET utf8 COLLATE utf8_general_ci;
