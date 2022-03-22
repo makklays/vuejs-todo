@@ -49,4 +49,6 @@ export default {
 .out-margin {
   margin-left: 10px;
 }
+
+@import './css/styles/main.css';
 </style>
