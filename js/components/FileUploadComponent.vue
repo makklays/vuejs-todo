@@ -51,14 +51,39 @@ export default {
       this.uploadError = null;
     },
     save(formData) {
-      // 
+      // upload data to the server 
+      this.currentStatus = STATUS_SAVING;
+      
+      upload(formData)
+        .then(x => {
+          this.uploadedFiles = [].concat(x);
+          this.currentStatus = STATUS_SUCCESS;
+        })
+        .catch(err => {
+          this.uploadError = err.response;
+          this.currentStatus = STATUS_FAILED; 
+        });
     },
     filesChange(fieldName, fileList) {
       // handle file changes
-      const formData =  
-    },
-    
-  }
+      const formData = new FormData();
+      
+      if (!fileList.length) return;
+      
+      // Append the files to FormData
+      Array 
+        .from(Array(fileList.length).keys())
+        .map(x => {
+          formData.append(fieldName, fileList[x], fileList[x].name);
+        });
+        
+      // save it 
+      this.save(formData);
+    }
+  },
+  mounted() {
+    this.reset();
+  },
 }
 </script>
 
