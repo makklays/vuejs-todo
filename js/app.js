@@ -3,9 +3,10 @@ require('.bootstrap');
 
 window.Vue = require('vue').default;
 
+// global registration component 
 // Vue.component('example-component', require('./components/ExampleComponent.vue').default);
 
-// components
+// local registration component
 import MyComponent from "./components/MyComponent.vue";
 import UserInfoComponent from "./components/user/UserInfoComponent.vue";
 import ListUsers from "./components/user/ListUsers.vue",
