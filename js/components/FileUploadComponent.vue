@@ -17,7 +17,49 @@
 </template>
 
 <script>
-
+import {upload} from './file-upload.service';
+const STATUS_INITIAL = 0, STATUS_SAVING = 1, STATUS_SUCCESS = 2, STATUS_FAILED = 3;
+export default {
+  name: 'app',
+  data() {
+    return {
+      uploadedFiles: [],
+      uploadError: null,
+      currentStatus: null,
+      uploadFieldName: 'photos',
+    }
+  },
+  computed: {
+    isInitial() {
+      return this.currentStatus == STATUS_INITIAL;
+    }
+    isSaving() {
+      return this.currentStatus == STATUS_SAVING;
+    }
+    isSuccess() {
+      return this.currentStatus == STATUS_SUCCESS;
+    }
+    isFailed() {
+      return this.currentStatus == STATUS_FAILED;
+    }
+  },
+  methods: {
+    reset() {
+      // reset form to initial state
+      this.currentStatus = STATUS_INITIAL;
+      this.uploadedFiles = [];
+      this.uploadError = null;
+    },
+    save(formData) {
+      // 
+    },
+    filesChange(fieldName, fileList) {
+      // handle file changes
+      const formData =  
+    },
+    
+  }
+}
 </script>
 
 <style lang="scss">
