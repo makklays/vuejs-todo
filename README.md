@@ -19,3 +19,6 @@ sudo git pull origin master --allow-unrelated-histories
 
 ## git config sslverify
 sudo git config --global http.sslverify false
+
+`sudo git config --list
+sudo git config --global --list` 
