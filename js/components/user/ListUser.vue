@@ -1,7 +1,25 @@
 <template>
   <div>
+    <h4>List of users</h4>
     <div class="out-margin" v-if="is_show">
-      <list-item v-for="item in list" v-bind:key="item.id"></user-item>
+      
+      <!-- table -->
+      <table class="table ">
+        <tr>
+          <th><input type="checkbox" v-on:click.prevent="selectAll" v-model="allSelected"></th>
+          <th>Name</th>
+        </tr>
+        <tr v-for="user in users">
+          <td><input type="checkbox" v-model="userIds" value="user.id"></td>
+          <td>{{ user.name }}</td>
+        </tr>
+      </table>
+      
+      <span>Selected IDs {{ userIDs | json }}</span>
+      
+      <!-- user-item -->
+      <user-item></user-item>
+      
     </div>  
   </div>
 </template>
@@ -13,7 +31,15 @@ export default {
   name: 'list-user',
   data: function() {
     return {
-      list: null,
+      users: [
+        {"id": 1, "name": "Alexander Bob"},
+        {"id": 2, "name": "Alex Blanc"},
+        {"id": 3, "name": "Blanc Fred"},
+        {"id": 4, "name": "Credan Frank"},
+      ],
+      selected: [],
+      allSelected: false,
+      userIDs: [],
       is_show: true,
     }
   },
@@ -25,7 +51,7 @@ export default {
     axios.get('/api/v2.1/users')
       .then(function(response){
         console.log('then-response', response.data);
-        vm.list = response.data.list;
+        vm.users = response.data.list;
       })
       .catch(function(error){
         console.log('catch', 'Error in catch!')
@@ -35,8 +61,15 @@ export default {
     Delete() {
       // TODO delete
     },
-    SelectAll() {
-      // TODO select all items
+    selectAll() {
+      // 
+      this.userIDs = [];
+      
+      if (!this.allSelected) {
+        for (user in this.users) {
+          this.userIDs.push(this.users[user].id);
+        }
+      }
     }
   },
   components: {
@@ -52,3 +85,4 @@ export default {
 
 @import './css/styles/main.css';
 </style>
+
