@@ -1,16 +1,18 @@
 <template>
-  <div class="out-margin"></div>
+  <div class="out-margin">
+    <div>#{{ id }} {{ login }} {{ email }} {{ fullname }} {{ amount }}{{ currency }} [{{ banco }}]</div>
+  </div>
 </template>
 
 <script>
 export default {
   name: 'list-item',
+  props: ['id', 'login', 'email', 'fullname', 'currency', 'amount', 'banco'],
   data: function() {
     return {
       list: null,
     }
   },
-  props: ['id', 'login', 'email', 'fullname', 'currency', 'amount', 'banco'],
   mounted: {
     // ¿Donde está error? =)) 
   }
