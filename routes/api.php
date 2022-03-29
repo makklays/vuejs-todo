@@ -1,6 +1,6 @@
 //
 
-//Route::group('api')->name('/api/v1.0.3')
+// Route::group('api')->name('/api/v1.0.3')
 
 Route::post('/users', 'App\Http\Controllers\UsersController@index');
 Route::post('/currencies', 'App\Http\Controllers\CurrenciesController@index');
