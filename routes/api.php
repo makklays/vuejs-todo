@@ -25,6 +25,7 @@ Route::middleware(['my_first', 'my_second'])->name('/api/v1.0.3')->group('api', 
   Route::put('/bitcoins/edit/{id}', 'App\Http\Controllers\BitcoinsController@edit')->where('id', [0-9]+);
   Route::delete('/bitcoins/delete/{id}', 'App\Http\Controllers\BitcoinsController@delete')->where('id', [0-9]+);
 
+  // resPuestas o conTestas)
   Route::get('/respuestas', 'App\Http\Controllers\RespuestasController@index');
   Route::post('/respuestas/add', 'App\Http\Controllers\RespuestasController@add');
   Route::put('/respuestas/edit/{id}', 'App\Http\Controllers\RespuestasController@edit')->where('id', [0-9]+);
