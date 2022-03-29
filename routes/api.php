@@ -7,6 +7,7 @@
  */
 
 use App\Http\Controllers\AmbulancesController;
+use App\Http\Controllers\CurrenciesController;
 
 Route::middleware(['my_first', 'my_second'])->name('api.')->group('/api', function(){
   
@@ -15,14 +16,16 @@ Route::middleware(['my_first', 'my_second'])->name('api.')->group('/api', functi
 
     Route::get('/users', 'App\Http\Controllers\UsersController@index')->name('users'); // route('api.v103.users');
     Route::post('/users/add', 'App\Http\Controllers\UsersController@add')->name('users.add');
+    Route::post('/users/view/{id}', 'App\Http\Controllers\UsersController@show')->where('id', [0-9]+)->name('users.view');
     // put - edite todas datas, patch - edite part de datos
     Route::put('/users/edit/{id}', 'App\Http\Controllers\UsersController@edit')->where('id', [0-9]+)->name('users.edit');
     Route::delete('/users/delete/{id}', 'App\Http\Controllers\UsersController@delete')->where('id', [0-9]+)->name('users.delete');
 
-    Route::get('/currencies', 'App\Http\Controllers\CurrenciesController@index');
-    Route::post('/currencies/add', 'App\Http\Controllers\CurrenciesController@add');
-    Route::put('/currencies/edit/{id}', 'App\Http\Controllers\CurrenciesController@edit')->where('id', [0-9]+);
-    Route::delete('/currencies/delete/{id}', 'App\Http\Controllers\CurrenciesController@delete')->where('id', [0-9]+);
+    Route::get('/currencies', ['CurrenciesController::class', 'index']);
+    Route::post('/currencies/add', ['CurrenciesController::class', 'add']);
+    Route::post('/currencies/view/{id}', ['CurrenciesController', 'view'])->where('id', [0-9]+);
+    Route::put('/currencies/edit/{id}', ['CurrenciesController', 'edit'])->where('id', [0-9]+);
+    Route::delete('/currencies/delete/{id}', ['CurrenciesController::class', 'delete'])->where('id', [0-9]+);
 
     Route::get('/bitcoins', 'App\Http\Controllers\BitcoinsController@index');
     Route::post('/bitcoins/add', 'App\Http\Controllers\BitcoinsController@add');
@@ -34,6 +37,8 @@ Route::middleware(['my_first', 'my_second'])->name('api.')->group('/api', functi
     Route::post('/respuestas/add', 'App\Http\Controllers\RespuestasController@add');
     Route::put('/respuestas/edit/{id}', 'App\Http\Controllers\RespuestasController@edit')->where('id', [0-9]+);
     Route::delete('/respuestas/delete/{id}', 'App\Http\Controllers\RespuestasController@delete')->where('id', [0-9]+);
+
+    Route::get('/roja-ruta/{id}', 'AmorController@view')->where('id', '[0-9]+')->name('roja-ruta'); // route('api.v103.roja-ruta', ['id' => 6]);
   });
 
   // v1.0.2 
