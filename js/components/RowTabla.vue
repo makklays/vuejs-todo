@@ -3,7 +3,7 @@
     <td>{{ item.id }}</td>
     <td>{{ item.titulo }}</td>
     <td>{{ item.fecha }}</td>
-    <td><button class="btn btn-success" v-on:click="removeRow">Delete</a></td>
+    <td><button class="btn btn-success" v-on:click="removeRow">Delete</button></td>
   </tr>
 </template>
 
