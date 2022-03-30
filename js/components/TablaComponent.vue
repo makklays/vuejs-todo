@@ -1,11 +1,21 @@
 <template>
   <div v-if="is_lista">
-    <div v-for="item in lista" class="tabla">
-      <row-tabla v-bind.item="item" v-on:remove="removeRow"></row-tabla>
-    </div>
+    <table class="table table-dashed">
+      <thead>
+        <tr>
+          <th class="my-th">ID</th>
+          <th class="my-th">Título</th>
+          <th class="my-th">Fecha</th>
+          <th class="my-th">Acción</th>
+        </tr>
+      </thead>
+      <tbody v-for="item in lista" class="tabla">
+        <row-tabla v-bind.item="item" v-on:remove="removeRow"></row-tabla>
+      </tbody>
+    </table>
   </div>
   <div v-else="is_lista">
-    
+    No tiene ningúnas datas
   </div>
 </template>
 
@@ -35,8 +45,8 @@ export data {
   }
   methods: {
     remove(id) {
-      //
-      return '';
+      this.lista = this.lista.filter(item => item.id !== id);
+      //return this.lista.id;
     }
   }
   components: {
@@ -48,7 +58,9 @@ export data {
 <style lang="scss" scope>
 .tabla {
   background-color: #FFFFFF;
-  
+}
+.my-th {
+  font-weight: bold;
 }
 </style>
 
