@@ -9,7 +9,7 @@
           <th class="my-th">Acción</th>
         </tr>
       </thead>
-      <tbody v-for="item in lista" class="tabla">
+      <tbody v-for="(item, index) in lista" :key="item.id" class="tabla">
         <row-tabla v-bind.item="item" v-on:remove="removeRow"></row-tabla>
       </tbody>
     </table>
@@ -31,7 +31,9 @@ export data {
     }
   },
   mounted: {
-    let json = {
+    this.is_lista = true;
+    
+    let json = [
       {id: 1, titulo: 'Besar y abrazar', fecha: '30-03-2022'},
       {id: 2, titulo: 'Estudiar español', fecha: '29-03-2022'},
       {id: 3, titulo: 'Programar', fecha: '28-03-2022'},
@@ -40,13 +42,19 @@ export data {
       {id: 6, titulo: 'Cocinar la comida', fecha: '30-03-2022'},
       {id: 7, titulo: 'Desarrollador mi sitio web', fecha: '26-03-2022'},
       {id: 8, titulo: 'Ir a trabajar', fecha: '28-03-2022'}, 
-    };
+    ];
     this.lista = json;
   }
   methods: {
     remove(id) {
-      this.lista = this.lista.filter(item => item.id !== id);
-      //return this.lista.id;
+      return this.lista.splice(this.lista.indexOf(id), 1);
+      
+      //this.lista = this.lista.filter(item => item.id !== id);
+      /*return this.lista = this.lista.filter(function(item){
+        if (item.id !== id) {
+          return item;
+        }
+      });*/
     }
   }
   components: {
