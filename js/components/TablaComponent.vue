@@ -22,7 +22,7 @@
 </template>
 
 <script>
-import RowTabla from './components/RowTabla.vue';
+import RowTabla from './RowTabla.vue';
 
 export data {
   name: 'tabla-component',
