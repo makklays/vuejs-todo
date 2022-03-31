@@ -1,8 +1,9 @@
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 // SIMPLE EJEMPLO 
 // (no trabaja 'import' syntax error)
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 require('.bootstrap');
-
 window.Vue = require('vue').default;
 
 // global registration component 
