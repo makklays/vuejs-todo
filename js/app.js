@@ -1,15 +1,17 @@
-//
-//require('.bootstrap');
+// SIMPLE EJEMPLO 
+// (no trabaja 'import' syntax error)
 
-//window.Vue = require('vue').default;
+require('.bootstrap');
+
+window.Vue = require('vue').default;
 
 // global registration component 
 // Vue.component('example-component', require('./components/ExampleComponent.vue').default);
 
 // local registration component
-//import MyComponent from "./components/MyComponent.vue";
-//import UserInfoComponent from "./components/user/UserInfoComponent.vue";
-//import ListUsers from "./components/user/ListUsers.vue";
+// import MyComponent from "./components/MyComponent.vue";
+// import UserInfoComponent from "./components/user/UserInfoComponent.vue";
+// import ListUsers from "./components/user/ListUsers.vue";
 import TablaComponent from "./components/TablaComponent.vue";
 
 const app = new Vue ({
@@ -21,3 +23,4 @@ const app = new Vue ({
     'tabla-component': TablaComponent,
   }
 });
+
