@@ -22,7 +22,7 @@
 </template>
 
 <script>
-import RowTabla from './RowTabla.vue';
+import { RowTabla } from './RowTabla.vue';
 
 export data {
   name: 'tabla-component',
@@ -46,7 +46,7 @@ export data {
       {id: 8, titulo: 'Ir a trabajar', fecha: '28-03-2022'}, 
     ];
     this.lista = json;
-  }
+  },
   methods: {
     remove(id) {
       return this.lista.splice(this.lista.indexOf(id), 1);
@@ -59,7 +59,7 @@ export data {
       });*/
       
     }
-  }
+  },
   components: {
     'row-tabla': RowTabla,  
   }
