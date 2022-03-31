@@ -15,7 +15,7 @@ import TablaComponent from "./components/TablaComponent.vue";
 const app = new Vue ({
   el: '#app',
   components: {
-    'my-componen': MyComponent,
+    //'my-componen': MyComponent,
     'user-info': UserInfoComponent,
     'list-users': ListUsers,
     'tabla-component': TablaComponent,
