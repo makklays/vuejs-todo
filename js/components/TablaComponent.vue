@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="tbl">
     <div v-if="is_lista">
       <table class="table table-dashed">
         <thead>
