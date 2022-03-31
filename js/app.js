@@ -1,7 +1,7 @@
 //
-require('.bootstrap');
+//require('.bootstrap');
 
-window.Vue = require('vue').default;
+//window.Vue = require('vue').default;
 
 // global registration component 
 // Vue.component('example-component', require('./components/ExampleComponent.vue').default);
