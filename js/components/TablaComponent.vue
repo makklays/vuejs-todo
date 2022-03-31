@@ -32,7 +32,7 @@ export data {
       is_lista: true,
     }
   },
-  mounted: {
+  mounted() {
     this.is_lista = true;
     
     let json = [
