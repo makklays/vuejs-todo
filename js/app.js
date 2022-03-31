@@ -18,6 +18,6 @@ const app = new Vue ({
     'my-componen': MyComponent,
     'user-info': UserInfoComponent,
     'list-users': ListUsers,
-    'tabla': TablaComponent,
+    'tabla-component': TablaComponent,
   }
 });
