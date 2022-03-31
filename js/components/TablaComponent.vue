@@ -1,22 +1,24 @@
 <template>
-  <div v-if="is_lista">
-    <table class="table table-dashed">
-      <thead>
-        <tr>
-          <th class="my-th">ID</th>
-          <th class="my-th">Título</th>
-          <th class="my-th">Fecha</th>
-          <th class="my-th">Acción</th>
-        </tr>
-      </thead>
-      <tbody v-for="(item, index) in lista" :key="item.id" class="tabla">
-        <row-tabla v-bind.item="item" v-on:remove="removeRow"></row-tabla>
-      </tbody>
-    </table>
-  </div>
-  <div v-else="is_lista">
-    No tiene ningúnas datas
-  </div>
+  <div>
+    <div v-if="is_lista">
+      <table class="table table-dashed">
+        <thead>
+          <tr>
+            <th class="my-th">ID</th>
+            <th class="my-th">Título</th>
+            <th class="my-th">Fecha</th>
+            <th class="my-th">Acción</th>
+          </tr>
+        </thead>
+        <tbody v-for="(item, index) in lista" :key="item.id" class="tabla">
+          <row-tabla v-bind.item="item" v-on:remove="removeRow"></row-tabla>
+        </tbody>
+      </table>
+    </div>
+    <div v-else="is_lista">
+      No tiene ningúnas datas
+    </div>
+  </div>  
 </template>
 
 <script>
