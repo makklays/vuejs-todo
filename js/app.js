@@ -9,8 +9,8 @@ window.Vue = require('vue').default;
 // local registration component
 import { MyComponent } from "./components/MyComponent.vue";
 import { UserInfoComponent } from "./components/user/UserInfoComponent.vue";
-import { ListUsers } from "./components/user/ListUsers.vue",
-import { TablaComponent } from "./components/TablaComponent.vue",
+import { ListUsers } from "./components/user/ListUsers.vue";
+import { TablaComponent } from "./components/TablaComponent.vue";
 
 const app = new Vue ({
   el: '#app',
