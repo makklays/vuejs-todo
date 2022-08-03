@@ -1,0 +1,26 @@
+
+////// API status //////
+
+200	OK	The request was successfully completed.
+201	Created	A new resource was successfully created.
+400	Bad Request	The request was invalid.
+401	Unauthorized	The request did not include an authentication token or the authentication token was expired.
+
+400 Bad Request	
+The request could not be understood by the server due to incorrect syntax. The client SHOULD NOT repeat the request without modifications.
+
+401 Unauthorized	
+Indicates that the request requires user authentication information. The client MAY repeat the request with a suitable Authorization header field
+
+402 Payment Required (Experimental)	
+Reserved for future use. It is aimed for using in the digital payment systems.
+
+403 Forbidden	
+Unauthorized request. The client does not have access rights to the content. Unlike 401, the client’s identity is known to the server.
+
+404 Not Found	
+The server can not find the requested resource.
+
+405 Method Not Allowed	
+The request HTTP method is known by the server but has been disabled and cannot be used for that resource.
+
