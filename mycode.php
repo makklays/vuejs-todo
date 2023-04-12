@@ -43,7 +43,7 @@ class MiBoda
 // 
 $boda = new MiBoda('Alexander', 'Maria');
 $boda->setFecha('02-06-2024');
-$boda->getFecha(); // veo '02-06-2024'
+echo $boda->getFecha(); // veo '02-06-2024'
 
 // ¿Cuanto tiempo más?
 echo $boda->countDiasAMiBoda(); // 417 dias 
