@@ -49,3 +49,6 @@ echo $boda->getFecha(); // veo '02-06-2024'
 echo $boda->countDiasAMiBoda(); // 417 dias 
 
 // 
+//
+//
+//
