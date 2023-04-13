@@ -48,3 +48,4 @@ echo $boda->getFecha(); // veo '02-06-2024'
 // ¿Cuanto tiempo más?
 echo $boda->countDiasAMiBoda(); // 417 dias 
 
+// 
