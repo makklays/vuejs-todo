@@ -27,6 +27,15 @@ class MiBoda
     return $this->fecha;
   }
   
+  public function haceCompras()
+  {
+    $listaDeCompras = [
+      '1' => 'Floras',
+      '2' => 'Vestido',
+    ]
+    return $listaDeCompras;
+  }
+  
   public function countDiasAMiBoda()
   {
     $time = strtotime('02-06-2024') - strtotime(date('d-m-Y'));
@@ -48,7 +57,16 @@ echo $boda->getFecha(); // veo '02-06-2024'
 // ¿Cuanto tiempo más?
 echo $boda->countDiasAMiBoda(); // 417 dias 
 
-// 
+echo '<pre>';
+print_r($boda->haceCompras()); 
+echo '</pre>';
+
+// veo la lista de compras
+// [
+//   '1' => 'Floras',
+//   '2' => 'Vestido',
+// ]
 //
+
 //
 //
