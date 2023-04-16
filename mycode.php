@@ -36,6 +36,21 @@ class MiBoda
     return $listaDeCompras;
   }
   
+  public function elejirLugar($numero)
+  {
+    $lugars = [
+      '1' => 'En el mar',
+      '2' => 'En el registro de matrinomio',
+      '3' => 'En las montanas',
+    ];
+    
+    if (!empty($lugars[$numero])) {
+      return $lugars[$numero];
+    } else {
+      return 'Elije otro numero!';
+    }
+  }
+  
   public function countDiasAMiBoda()
   {
     $time = strtotime('02-06-2024') - strtotime(date('d-m-Y'));
@@ -66,7 +81,9 @@ echo '</pre>';
 //   '1' => 'Floras',
 //   '2' => 'Vestido',
 // ]
-//
 
+$boda->elejirLugar(1); // En el mar
+
+//
 //
 //
