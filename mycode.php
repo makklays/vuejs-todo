@@ -45,6 +45,7 @@ class MiBoda
       '4' => 'En el avion',
       '5' => 'En el barco',
       '6' => 'Al lado del registro de matrinomio',
+      '7' => 'En España',
     ];
     
     if (!empty($lugars[$numero])) {
