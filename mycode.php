@@ -97,8 +97,8 @@ echo '</pre>';
 // ]
 
 $boda->elejirLugar(1); // En el mar
+$boda->invitarInvitados(1); // 40 personas 
 
-$boda->invitarInvitados(1);
 //
 //
 //
