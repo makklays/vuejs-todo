@@ -55,6 +55,16 @@ class MiBoda
     }
   }
   
+  public function invitarInvitados($numero)
+  {
+    $invitados = [
+      '1' => '40 personas',
+      '2' => '60 personas',
+      '3' => '80 perosnas', 
+    ];
+    return $invitados[$numero];
+  }
+  
   public function countDiasAMiBoda()
   {
     $time = strtotime('02-06-2024') - strtotime(date('d-m-Y'));
@@ -88,6 +98,7 @@ echo '</pre>';
 
 $boda->elejirLugar(1); // En el mar
 
+$boda->invitarInvitados(1);
 //
 //
 //
