@@ -30,6 +30,7 @@ class MiBoda
   public function haceCompras()
   {
     $listaDeCompras = [
+      '0' => 'Anillos',
       '1' => 'Floras',
       '2' => 'Vestido',
     ]
