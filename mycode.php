@@ -11,17 +11,20 @@ class MiBoda
   protected $nombre_esposa;
   protected $fecha;
 
+  // 
   public function __construct($marido, $esposa)
   {
     $this->nombre_marido = $marido;
     $this->nombre_esposa = $esposa;
   }
 
+  //
   public function setFecha($fecha)
   {
     $this->fecha = $fecha;
   }
   
+  // 
   public function getFecha()
   {
     return $this->fecha;
@@ -38,6 +41,7 @@ class MiBoda
     return $listaDeCompras;
   }
   
+  // 
   public function elejirLugar($numero)
   {
     $lugars = [
@@ -57,6 +61,7 @@ class MiBoda
     }
   }
   
+  // 
   public function invitarInvitados($numero)
   {
     $invitados = [
@@ -67,6 +72,7 @@ class MiBoda
     return $invitados[$numero];
   }
   
+  // 
   public function countDiasAMiBoda()
   {
     $time = strtotime('02-06-2024') - strtotime(date('d-m-Y'));
