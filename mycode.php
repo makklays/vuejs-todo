@@ -27,6 +27,7 @@ class MiBoda
     return $this->fecha;
   }
   
+  // 
   public function haceCompras()
   {
     $listaDeCompras = [
