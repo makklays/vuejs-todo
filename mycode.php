@@ -45,6 +45,7 @@ class MiBoda
   public function elejirLugar($numero)
   {
     $lugars = [
+      '0' => 'En el casa',
       '1' => 'En el mar',
       '2' => 'En el registro de matrinomio',
       '3' => 'En las montanas',
