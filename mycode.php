@@ -92,7 +92,7 @@ class MiBoda
   public function elejirLugarNoche($numero)
   {
     $n = [
-      '0' => 'En la casa',
+      '1' => 'En la casa',
     ];
     
     return $n[$numero];
@@ -119,7 +119,7 @@ echo '</pre>';
 
 $boda->elejirLugar(1); // En el mar
 $boda->invitarInvitados(1); // 40 personas 
-
+$boda->elejirLugarNoche(1); // 
 //
 //
 //
