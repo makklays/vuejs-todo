@@ -87,6 +87,16 @@ class MiBoda
       return 0;
     }
   }
+  
+  // 
+  public function elejirLugarNoche($numero)
+  {
+    $n = [
+      '0' => 'En la casa',
+    ];
+    
+    return $n[$numero];
+  }
 }
 
 // 
