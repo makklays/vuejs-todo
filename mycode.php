@@ -67,9 +67,9 @@ class MiBoda
   {
     $invitados = [
       '0' => 'solo testigos',
-      '1' => '40 personas',
-      '2' => '60 personas',
-      '3' => '80 perosnas', 
+      '1' => '20 personas',
+      '2' => '40 personas',
+      '3' => '60 perosnas', 
       '4' => '100 personas'
     ];
     return $invitados[$numero];
