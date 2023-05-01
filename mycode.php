@@ -93,7 +93,7 @@ class MiBoda
   {
     $n = [
       '1' => 'En la casa', 
-      '2' => 'En la casa', 
+      '2' => '', 
     ];
     
     return $n[$numero];
