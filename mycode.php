@@ -38,6 +38,7 @@ class MiBoda
       '1' => 'Floras',
       '2' => 'Vestido', 
       '3' => 'Traje', 
+      '4' => '', 
     ]
     return $listaDeCompras;
   }
