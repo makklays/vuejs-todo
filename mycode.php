@@ -100,6 +100,16 @@ class MiBoda
     
     return $n[$numero];
   }
+  
+  public function lugarPrimeroMes($numero)
+  {
+    $lugares = [
+      '1' => 'En casa',
+      '2' => '', 
+    ];
+    
+    return $lugares[$numero];
+  }
 }
 
 // 
@@ -123,7 +133,7 @@ echo '</pre>';
 $boda->elejirLugar(1); // En el mar
 $boda->invitarInvitados(1); // 40 personas 
 $boda->elejirLugarPrimeraNoche(1); // 
-
+$boda->lugarPrimeroMes(1); // 
 //
 //
 //
