@@ -105,7 +105,7 @@ class MiBoda
   public function lugarPrimeroMes($numero)
   {
     $lugares = [
-      '1' => 'En casa',
+      '1' => 'En la casa',
       '2' => '', 
     ];
     
