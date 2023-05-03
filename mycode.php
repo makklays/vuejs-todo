@@ -101,6 +101,7 @@ class MiBoda
     return $n[$numero];
   }
   
+  // 
   public function lugarPrimeroMes($numero)
   {
     $lugares = [
