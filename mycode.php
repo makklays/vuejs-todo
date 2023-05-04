@@ -106,7 +106,7 @@ class MiBoda
   {
     $lugares = [
       '1' => 'En la casa',
-      '2' => '', 
+      '2' => 'Afuera de la casa', 
     ];
     
     return $lugares[$numero];
