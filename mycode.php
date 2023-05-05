@@ -94,6 +94,7 @@ class MiBoda
   public function elejirLugarPrimeraNoche($numero)
   {
     $n = [
+      '0' => 'En el mar',
       '1' => 'En la casa', 
       '2' => 'Afuera de la casa', 
     ];
