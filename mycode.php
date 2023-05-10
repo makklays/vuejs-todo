@@ -98,6 +98,7 @@ class MiBoda
       '1' => 'En la casa', 
       '2' => 'Afuera de la casa',
       '3' => 'En Palma de Mallorca', 
+      '4' => 'En Europa',  
     ];
     
     return $n[$numero];
