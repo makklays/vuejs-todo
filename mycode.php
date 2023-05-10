@@ -96,7 +96,8 @@ class MiBoda
     $n = [
       '0' => 'En el mar',
       '1' => 'En la casa', 
-      '2' => 'Afuera de la casa', 
+      '2' => 'Afuera de la casa',
+      '3' => 'En Palma de Mallorca', 
     ];
     
     return $n[$numero];
