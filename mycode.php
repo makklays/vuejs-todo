@@ -38,7 +38,8 @@ class MiBoda
       '1' => 'Floras',
       '2' => 'Vestido', // <----- ¿Tienes unas ideas? Tenemos 384 días hasta nuestra boda 
       '3' => 'Traje', 
-      '4' => 'Musica',  
+      '4' => 'Musica', 
+      '5' => '', 
     ]
     return $listaDeCompras;
   }
