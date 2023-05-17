@@ -34,11 +34,11 @@ class MiBoda
   public function haceCompras()
   {
     $listaDeCompras = [
-      '0' => 'Anillos',
-      '1' => 'Floras',
+      '0' => 'Anillos', // compré yo 
+      '1' => 'Floras', // las rosas
       '2' => 'Vestido', // <----- ¿Tienes unas ideas? Tenemos 382 días hasta nuestra boda
       '3' => 'Traje', 
-      '4' => 'Musica', 
+      '4' => 'Musica', // me gusta violín ¿Y tu?
       '5' => '', 
     ]
     return $listaDeCompras;
