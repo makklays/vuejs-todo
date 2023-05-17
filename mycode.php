@@ -36,7 +36,7 @@ class MiBoda
     $listaDeCompras = [
       '0' => 'Anillos',
       '1' => 'Floras',
-      '2' => 'Vestido', // <----- ¿Tienes unas ideas? Tenemos 384 días hasta nuestra boda 
+      '2' => 'Vestido', // <----- ¿Tienes unas ideas? Tenemos 382 días hasta nuestra boda
       '3' => 'Traje', 
       '4' => 'Musica', 
       '5' => '', 
