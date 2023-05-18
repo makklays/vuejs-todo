@@ -37,7 +37,7 @@ class MiBoda
       '0' => 'Anillos', // compré yo 
       '1' => 'Floras', // las rosas
       '2' => 'Vestido', // <----- ¿Tienes unas ideas? Tenemos 382 días hasta nuestra boda
-      '3' => 'Traje', 
+      '3' => 'Traje', // traje negro
       '4' => 'Musica', // me gusta violín ¿Y tu?
       '5' => '', 
     ]
