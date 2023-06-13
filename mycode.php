@@ -119,6 +119,23 @@ class MiBoda
     
     return $lugares[$numero];
   }
+  
+  // 
+  public function elejirLugarNuestraVacanciones($numero)
+  {
+    $lugares = [
+      '0' => 'En el mar',
+      '1' => 'En la casa', 
+      '2' => 'Afuera de la casa',
+      '3' => 'En Palma de Mallorca', 
+      '4' => 'En Europa',  
+      '5' => 'En Alemania',
+      '6' => 'En un habitación de el/la hermano/a =) es chiste', 
+      '7' => 'En un castillo antiguo',
+    ];
+    
+    return $lugares[$numero];
+  }
 }
 
 // 
