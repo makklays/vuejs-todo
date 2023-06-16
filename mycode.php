@@ -144,7 +144,7 @@ $boda->setFecha('02-06-2024');
 echo $boda->getFecha(); // veo '02-06-2024'
 
 // ¿Cuanto tiempo más?
-echo $boda->countDiasAMiBoda(); // 417 dias, 406, 403, 387, 386, 377, 376, 375, 374, 370, 369, 367, 366, 365, 364, 363, 362, 358, 357, 356, 355, 353 dias  
+echo $boda->countDiasAMiBoda(); // 417 dias, 406, 403, 387, 386, 377, 376, 375, 374, 370, 369, 367, 366, 365, 364, 363, 362, 358, 357, 356, 355, 353, 352 dias  
 
 echo '<pre>';
 print_r($boda->haceCompras()); 
