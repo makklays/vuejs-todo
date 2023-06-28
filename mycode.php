@@ -36,7 +36,7 @@ class MiBoda
     $listaDeCompras = [
       '0' => 'Anillos', // compré yo 
       '1' => 'Floras', // las rosas
-      '2' => 'Vestido', // <----- ¿Tienes unas ideas? Tenemos 380, 377, 376, 375, 374, 370, 369, 367, 366, 365, 364, 363, 362, 358, 357, 356, 355, 353, 352, 349, 347, 346, 345, 343, 342, 341 días hasta nuestra boda
+      '2' => 'Vestido', // <----- ¿Tienes unas ideas? Tenemos 380, 377, 376, 375, 374, 370, 369, 367, 366, 365, 364, 363, 362, 358, 357, 356, 355, 353, 352, 349, 347, 346, 345, 343, 342, 341, 340 días hasta nuestra boda
       '3' => 'Traje', // traje negro
       '4' => 'Musica', // me gusta violín ¿Y tu?
       '5' => '', 
