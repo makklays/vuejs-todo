@@ -39,4 +39,5 @@ CREATE DATABASE mydatabase CHARACTER SET utf8 COLLATE utf8_general_ci;
 /tests/Feature/MyTestFunc.php 
 
 `vendor/bin/phpunit --filter=MyTestFunc`
+
 `vendor/bin/phpunit ./tests/MyTestFunc`
