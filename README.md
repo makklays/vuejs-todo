@@ -33,3 +33,10 @@ CREATE DATABASE mydatabase CHARACTER SET utf8 COLLATE utf8_general_ci;
 
 `$ sudo git config user.email alexander.kuziv@gmail.com`
 
+## Test in Laravel 
+
+`php artisan make:test MyTestFunc` 
+/tests/Feature/MyTestFunc.php 
+
+`vendor/bin/phpunit --filter=MyTestFunc`
+`vendor/bin/phpunit ./tests/MyTestFunc`
