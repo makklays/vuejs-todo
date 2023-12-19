@@ -41,3 +41,23 @@ CREATE DATABASE mydatabase CHARACTER SET utf8 COLLATE utf8_general_ci;
 `vendor/bin/phpunit --filter=MyTestFunc`
 
 `vendor/bin/phpunit ./tests/MyTestFunc`
+
+## Install Laravel 10 
+
+`composer create-project laravel/laravel:10.0 my-site-name`
+
+`composer install`
+
+`composer require laravel/ui`
+
+// Generate basic scaffolding...
+php artisan ui bootstrap
+php artisan ui vue
+php artisan ui react
+
+// Generate login / registration scaffolding...
+php artisan ui bootstrap --auth
+php artisan ui vue --auth
+php artisan ui react --auth
+
+
