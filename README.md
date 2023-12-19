@@ -50,7 +50,7 @@ CREATE DATABASE mydatabase CHARACTER SET utf8 COLLATE utf8_general_ci;
 
 `composer require laravel/ui`
 
-# Generate basic scaffolding...
+### Generate basic scaffolding...
 
 `php artisan ui bootstrap`
 
@@ -58,7 +58,7 @@ CREATE DATABASE mydatabase CHARACTER SET utf8 COLLATE utf8_general_ci;
 
 `php artisan ui react`
 
-# Generate login / registration scaffolding...
+### Generate login / registration scaffolding...
 
 `php artisan ui bootstrap --auth`
 
