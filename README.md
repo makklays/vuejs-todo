@@ -51,13 +51,21 @@ CREATE DATABASE mydatabase CHARACTER SET utf8 COLLATE utf8_general_ci;
 `composer require laravel/ui`
 
 // Generate basic scaffolding...
-php artisan ui bootstrap
-php artisan ui vue
-php artisan ui react
+
+`php artisan ui bootstrap`
+
+`php artisan ui vue`
+
+`php artisan ui react`
 
 // Generate login / registration scaffolding...
-php artisan ui bootstrap --auth
-php artisan ui vue --auth
-php artisan ui react --auth
+
+`php artisan ui bootstrap --auth`
+
+`php artisan ui vue --auth`
+
+`php artisan ui react --auth`
+
+
 
 
