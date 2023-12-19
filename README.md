@@ -66,6 +66,12 @@ CREATE DATABASE mydatabase CHARACTER SET utf8 COLLATE utf8_general_ci;
 
 `php artisan ui react --auth`
 
+### and 
+
+`npm install`
+
+`npm run dev`
+
 
 
 
