@@ -72,6 +72,15 @@ CREATE DATABASE mydatabase CHARACTER SET utf8 COLLATE utf8_general_ci;
 
 `npm run dev`
 
+required: { node: '^14.18.0 || >=16.0.0' },
+
+#### por eso  
+
+`nvm install 18.1.0`
+
+`nvm use 18.1.0`
+
+
 
 
 
