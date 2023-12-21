@@ -80,6 +80,19 @@ required: { node: '^14.18.0 || >=16.0.0' },
 
 `nvm use 18.1.0`
 
+## FOR ERROR: 
+##### insufficient permission for adding an object to repository database
+
+For Ubuntu (or any Linux)
+
+From project root,
+
+`cd .git/objects`
+
+`ls -al`
+
+`sudo chown -R yourname:yourgroup * `
+
 
 
 
