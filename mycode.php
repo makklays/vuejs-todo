@@ -45,9 +45,9 @@ class MiBoda
   }
 
   // 
-  public function elejirAperitivos($numero)
+  public function elejirBocadillos($numero)
   {
-    $aperitivos = [
+    $bocadillos = [
       '0' => 'Bocadillos sencillos',
       '1' => 'Bocadillos con tune',
       '2' => 'Bocadillos con salchicha',
@@ -57,8 +57,8 @@ class MiBoda
       '6' => 'Bocadillos dulces',
     ];
     
-    if (!empty($aperitivos[$numero])) {
-      return $aperitivos[$numero];
+    if (!empty($bocadillos[$numero])) {
+      return $bocadillos[$numero];
     } else {
       return 'Elije otro numero!';
     }
