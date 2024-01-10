@@ -43,6 +43,26 @@ class MiBoda
     ]
     return $listaDeCompras;
   }
+
+  // 
+  public function elejirAperitivos($numero)
+  {
+    $aperitivos = [
+      '0' => 'Bocadillos sencillos',
+      '1' => 'Bocadillos con tune',
+      '2' => 'Bocadillos con salchicha',
+      '3' => 'Bocadillos sandwich',
+      '4' => 'Mini bocadillos',
+      '5' => 'Bocadillos saludables',
+      '6' => 'Bocadillos dulces',
+    ];
+    
+    if (!empty($aperitivos[$numero])) {
+      return $aperitivos[$numero];
+    } else {
+      return 'Elije otro numero!';
+    }
+  }
   
   // 
   public function elejirLugar($numero)
