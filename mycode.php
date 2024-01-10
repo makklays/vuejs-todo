@@ -45,20 +45,21 @@ class MiBoda
   }
 
   // 
-  public function elejirBocadillos($numero)
+  public function elejirMeriendas($numero)
   {
-    $bocadillos = [
-      '0' => 'Bocadillos sencillos',
-      '1' => 'Bocadillos con tune',
-      '2' => 'Bocadillos con salchicha', 
-      '3' => 'Bocadillos sandwich',
-      '4' => 'Mini bocadillos',
-      '5' => 'Bocadillos saludables',
-      '6' => 'Bocadillos dulces',
+    $meriendas = [
+      '0' => 'Meriendas sencillos',
+      '1' => 'Meriendas con tune',
+      '2' => 'Meriendas con salchicha', 
+      '3' => 'Meriendas sandwich',
+      '4' => 'Mini meriendas',
+      '5' => 'Meriendas saludables',
+      '6' => 'Meriendas dulces',
+      '7' => 'Meriendas que hice yo',
     ];
     
-    if (!empty($bocadillos[$numero])) {
-      return $bocadillos[$numero];
+    if (!empty($meriendas[$numero])) {
+      return $meriendas[$numero];
     } else {
       return 'Elije otro numero!';
     }
