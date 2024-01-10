@@ -50,7 +50,7 @@ class MiBoda
     $bocadillos = [
       '0' => 'Bocadillos sencillos',
       '1' => 'Bocadillos con tune',
-      '2' => 'Bocadillos con salchicha',
+      '2' => 'Bocadillos con salchicha', 
       '3' => 'Bocadillos sandwich',
       '4' => 'Mini bocadillos',
       '5' => 'Bocadillos saludables',
