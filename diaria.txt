@@ -12,3 +12,7 @@
 // 
 // 
 /////////////
+
+
+char mi_character = 'A';
+Syste.out.println(mi_character); // A - 65
